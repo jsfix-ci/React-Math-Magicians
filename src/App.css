@@ -54,6 +54,13 @@ html {
   background-color: #e0e0e0;
 }
 
+.calBtn:hover {
+  width: 25%;
+  height: 70px;
+  border: solid #c3c3c3 1px;
+  background-color: #b1b1b1;
+}
+
 .operationBtn {
   background-color: #f5913e;
 }
