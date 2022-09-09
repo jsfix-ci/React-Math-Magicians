@@ -68,3 +68,10 @@ html {
 .zero {
   width: 50%;
 }
+
+.zero:hover{
+  width: 50%;
+  height: 70px;
+  border: solid #c3c3c3 1px;
+  background-color: #b1b1b1;
+}
