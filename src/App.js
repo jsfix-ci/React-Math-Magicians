@@ -2,8 +2,8 @@
 /* eslint-disable react/prefer-stateless-function */
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Calculator from './components/pages/Calculator';
-import Navbar from './components/pages/Navbar';
+import Calculator from './components/Calculator';
+import Navbar from './components/Navbar';
 import Quote from './pages/Quote';
 import Home from './pages/Home';
 
