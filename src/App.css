@@ -75,3 +75,8 @@ html {
   border: solid #c3c3c3 1px;
   background-color: #b1b1b1;
 }
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
+}
