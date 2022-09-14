@@ -1,21 +1,27 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/prefer-stateless-function */
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Calculator from './components/pages/Calculator';
 import Navbar from './components/pages/Navbar';
 import Quote from './pages/Quote';
 import Home from './pages/Home';
 
 function App() {
+  const text = 'Let\'s do some math! ';
   return (
     <>
-      <div>
-        <Navbar />
-        <h3>Math Magicians</h3>
-        <Routes>
+      <div className="cont">
+        <div className="nav">
+          <Navbar />
+          <h1>Math Magicians</h1>
+        </div>
+        <Switch>
           <Route exact path="/Calculator">
             <div className="main">
+              <h3>
+                {text}
+              </h3>
               <Calculator />
             </div>
           </Route>
@@ -25,7 +31,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-        </Routes>
+        </Switch>
       </div>
     </>
   );

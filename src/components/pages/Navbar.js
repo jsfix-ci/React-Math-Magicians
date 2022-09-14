@@ -21,8 +21,8 @@ function Navbar() {
   ];
 
   return (
-    <nav className="navBar">
-      <ul>
+    <nav>
+      <ul className="navBar">
         {links.map((link) => (
           <li key={link.id}>
             <NavLink to={link.path} activeClassName="active-link" exact>

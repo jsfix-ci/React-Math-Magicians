@@ -1,10 +1,11 @@
 import React from 'react';
 
+const text = '-To me, mathematics, computer science, and the arts are insanely related. They\'re all creative expressions-Sebastian Thrun';
+
 const Quote = () => (
   <div>
     <p>
-      {`To me, mathematics, computer science, and the arts are insanely related. They're all creative expressions.
-        <scan>Sebastian Thrun</scan>`}
+      {text}
     </p>
   </div>
 );
