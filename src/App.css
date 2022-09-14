@@ -4,16 +4,21 @@
 }
 
 html {
-  color: #555;
+  background-color: #6ec2de;
+  color: rgb(248, 248, 248);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
 .main {
+  display: flex;
   height: 400px;
-  margin: 10%;
-  padding: 10%;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cal {
@@ -21,7 +26,11 @@ html {
   display: flex;
   flex-direction: column;
   height: 400px;
+  width: 400px;
   margin: 5%;
+  align-items: flex-end;
+  align-content: flex-end;
+  border-style: solid;
 }
 
 .screen {
@@ -35,16 +44,22 @@ html {
   width: 100%;
 }
 
+p {
+  text-align: justify;
+  font-size: 22px;
+}
+
 .screen p {
   margin-right: 5%;
 }
 
 .numsOper {
-  display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: stretch;
+  width: 400px;
   height: 100%;
+  align-items: center;
+  align-content: stretch;
 }
 
 .calBtn {
@@ -74,4 +89,33 @@ html {
   height: 70px;
   border: solid #c3c3c3 1px;
   background-color: #b1b1b1;
+}
+
+.active-link {
+  color: rgb(6, 2, 106);
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 15%;
+  align-items: center;
+}
+
+.navBar,
+li,
+a {
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin-left: 5%;
+  font-size: 25px;
+}
+
+.cont {
+  margin: 5%;
 }
