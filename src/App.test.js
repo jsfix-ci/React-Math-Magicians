@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from './App';
 import Home from './pages/Home';
 import Calculator from './components/Calculator';
 import Quote from './pages/Quote';
-import userEvent from '@testing-library/user-event';
 
 test('renders learn react link', () => {
   render(<App />);
@@ -25,13 +25,11 @@ test('Quote router', () => {
   expect(hm).toMatchSnapshot();
 });
 
-// Simulate user interaction test
 test('Dom Calculator', () => {
-  render(<Calculator />);  
+  render(<Calculator />);
   userEvent.click(screen.getByText('3'));
   userEvent.click(screen.getByText('+'));
   userEvent.click(screen.getByText('2'));
   userEvent.click(screen.getByText('='));
-  // 12 + 3 = 15  <- on display
   expect(screen.getByTestId('display')).toHaveTextContent('5');
 });
