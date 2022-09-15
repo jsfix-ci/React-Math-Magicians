@@ -30,7 +30,6 @@ get clone https://github.com/diegoh40/React-Math-Magicians.git
 ### Deployment
 
 
-
 👤 **Author1**
 
 👤 **Diego Hernández**
