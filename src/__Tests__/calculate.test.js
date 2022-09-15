@@ -1,5 +1,5 @@
 import chai from 'chai';
-import calculate from './calculate';
+import calculate from '../logic/calculate';
 
 chai.config.truncateThreshold = 0;
 const { expect } = chai;

@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from './App';
-import Home from './pages/Home';
-import Calculator from './components/Calculator';
-import Quote from './pages/Quote';
+import App from '../App';
+import Home from '../pages/Home';
+import Calculator from '../components/Calculator';
+import Quote from '../pages/Quote';
 
 test('renders learn react link', () => {
   render(<App />);
