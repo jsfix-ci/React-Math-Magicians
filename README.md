@@ -11,7 +11,7 @@
 - Git Workflow, Git, GitHub
 
 ## Live Demo (if available)
-[Live Demo Link](awesome123calculator.netlify.app)
+[Live Demo Link](https://awesome123calculator.netlify.app/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
