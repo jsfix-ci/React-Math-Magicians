@@ -28,10 +28,10 @@ test('Quote router', () => {
 // Simulate user interaction test
 test('Dom Calculator', () => {
   render(<Calculator />);  
-  userEvent.click(screen.getByText('9'));
-  userEvent.click(screen.getByText('*'));
+  userEvent.click(screen.getByText('3'));
+  userEvent.click(screen.getByText('+'));
   userEvent.click(screen.getByText('2'));
   userEvent.click(screen.getByText('='));
   // 12 + 3 = 15  <- on display
-  expect(screen.getByTestId('display')).toHaveTextContent('18');
+  expect(screen.getByTestId('display')).toHaveTextContent('5');
 });
