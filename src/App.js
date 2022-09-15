@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/prefer-stateless-function */
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Navbar from './components/Navbar';
 import Quote from './pages/Quote';
@@ -10,7 +10,7 @@ import Home from './pages/Home';
 function App() {
   const text = 'Let\'s do some math! ';
   return (
-    <>
+    <BrowserRouter>
       <div className="cont">
         <div className="nav">
           <Navbar />
@@ -33,7 +33,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </>
+      </BrowserRouter>
   );
 }
 
